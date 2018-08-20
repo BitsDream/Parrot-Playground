@@ -1,0 +1,6 @@
+takeOff()
+move(direction: MoveDirection.up, duration: 1)
+droneSpeed = 10
+move(direction: MoveDirection.forward, duration: 2)
+move(direction: MoveDirection.backward, duration: 2)
+land()

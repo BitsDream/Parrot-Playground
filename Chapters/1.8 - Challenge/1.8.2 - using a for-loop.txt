@@ -1,0 +1,11 @@
+func horizontalSquare() {
+    for n in 1...4 {
+        move(direction: MoveDirection.forward, duration: 1)
+        turn(direction: TurnDirection.right, angle: 90)
+    }
+
+}
+
+takeOff()
+horizontalSquare()
+land()

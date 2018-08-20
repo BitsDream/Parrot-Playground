@@ -1,0 +1,10 @@
+func verticalSquare() {
+    move(direction: MoveDirection.left, duration: 1)
+    move(direction: MoveDirection.up, duration: 1)
+    move(direction: MoveDirection.right, duration: 1)
+    move(direction: MoveDirection.down, duration: 1)
+}
+
+takeOff()
+verticalSquare()
+land()

@@ -1,0 +1,5 @@
+takeOff()
+move(direction: MoveDirection.up, duration: 1)
+wait(1)
+move(direction: MoveDirection.down, duration: 2)
+land()

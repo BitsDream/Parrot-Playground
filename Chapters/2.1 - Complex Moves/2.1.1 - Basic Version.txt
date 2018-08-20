@@ -1,0 +1,3 @@
+takeOff()
+move(pitch: 0, roll: 0, gaz: 0, yaw: -20, duration: 2)
+land()

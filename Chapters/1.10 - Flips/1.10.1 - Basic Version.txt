@@ -1,0 +1,6 @@
+takeOff()
+flip(direction: FlipDirection.front)
+flip(direction: FlipDirection.back)
+flip(direction: FlipDirection.right)
+flip(direction: FlipDirection.left)
+land()

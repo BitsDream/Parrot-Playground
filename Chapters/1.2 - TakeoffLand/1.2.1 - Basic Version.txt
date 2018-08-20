@@ -1,0 +1,3 @@
+takeOff()
+wait(4)
+land()

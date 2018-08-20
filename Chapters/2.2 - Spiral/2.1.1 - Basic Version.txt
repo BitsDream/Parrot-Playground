@@ -1,0 +1,26 @@
+func twisterUp() {
+    //#-editable-code Add commands to your function
+    move(pitch: 20, roll: 20, gaz: 10, yaw: 80, duration: 5)
+    //#-end-editable-code
+}
+
+func twisterDown() {
+    //#-editable-code Add commands to your function
+    move(pitch: 20, roll: -20, gaz: -10, yaw: 80, duration: 5)
+    //#-end-editable-code
+}
+
+func verticalTwister() {
+    //#-editable-code Add commands to your function
+    twisterUp()
+    //turn(direction: TurnDirection.right, angle: 180)
+    twisterDown()
+    //#-end-editable-code
+}
+
+//#-editable-code Tap to enter code
+takeOff()
+//move(direction: MoveDirection.up, duration: 2)
+verticalTwister()
+land()
+//#-end-editable-code
