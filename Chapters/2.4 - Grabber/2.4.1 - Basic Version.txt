@@ -1,0 +1,5 @@
+openGrabber()
+wait(2)
+closeGrabber()
+wait(2)
+land()

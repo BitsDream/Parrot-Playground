@@ -1,0 +1,22 @@
+takeOff()
+// run forever
+while true {
+    let event = waitNextMotionEvent()
+    
+    switch event {
+    case .tiltForward:
+        move(direction: MoveDirection.forward, duration: 1)
+    case .tiltBackward:
+        move(direction: MoveDirection.backward, duration: 1)
+    case .tiltLeft: 
+        move(direction: MoveDirection.left, duration: 1)
+    case .tiltRight: 
+        move(direction: MoveDirection.right, duration: 1)
+    case .shakeUp: 
+        move(direction: MoveDirection.up, duration: 1)
+    case .shakeDown: 
+        move(direction: MoveDirection.down, duration: 1)
+    default:
+        break
+    }
+}

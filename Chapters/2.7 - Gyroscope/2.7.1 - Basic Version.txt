@@ -1,0 +1,13 @@
+// run forever
+while true {
+    let event = waitNextMotionEvent()
+    
+    switch event {
+    case .tiltForward:
+        move(direction: MoveDirection.up, duration: 1)
+    case .tiltBackward:
+        move(direction: MoveDirection.down, duration: 1)
+    default:
+        break
+    }
+}

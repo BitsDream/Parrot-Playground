@@ -1,0 +1,21 @@
+func pictureRow(){
+    for _ in 1...4 {
+        move(direction: MoveDirection.forward, duration: 1)
+        //takePicture()
+    }
+}
+func pictureSquare(){
+    for _ in 1...4{
+        //takePicture()
+        pictureRow()
+        move(direction: MoveDirection.right, duration: 1)
+        move(direction: MoveDirection.backward, duration: 2)
+    }
+    move(direction: MoveDirection.right, duration: 2)
+}
+
+takeOff()
+droneSpeed = 50
+move(direction: MoveDirection.up, duration: 1)
+pictureSquare()
+land()
